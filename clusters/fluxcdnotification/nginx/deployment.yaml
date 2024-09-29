@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-deployment-13
   namespace: default
   labels:
     app: nginx
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: wordpress:latest
         ports:
         - containerPort: 80  # Expose port 80 inside the container
 
