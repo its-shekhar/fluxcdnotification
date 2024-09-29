@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: ghcr.io/stefanprodan/podinfo:5.0.0 # {"$imagepolicy": "flux-system:podinfo"}
+        image: ghcr.io/stefanprodan/podinfo:5.2.1 # {"$imagepolicy": "flux-system:podinfo"}
         imagePullPolicy: IfNotPresent
         ports:
-          - name: http
-            containerPort: 9898  # Expose port 80 inside the container
-            protocol: TCP
+        - name: http
+          containerPort: 9898 # Expose port 80 inside the container
+          protocol: TCP
