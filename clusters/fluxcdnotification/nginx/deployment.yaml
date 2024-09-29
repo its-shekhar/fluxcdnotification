@@ -19,4 +19,4 @@ spec:
         ports:
           - name: http
             containerPort: 9898  # Expose port 80 inside the container
-            protocol: tcp
+            protocol: TCP
