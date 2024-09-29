@@ -6,6 +6,10 @@ metadata:
   namespace: flux-system
 spec:
   eventSeverity: info
+  summary: "flux cd notifications"
+  eventMetadata:
+    env: "staging"
+    cluster: "notification-cluster"
   eventSources:
   - kind: Kustomization
     name: '*'
