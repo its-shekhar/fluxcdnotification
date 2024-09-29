@@ -5,7 +5,7 @@ metadata:
   name: slack
   namespace: flux-system
 spec:
-  address: https://hooks.slack.com/services/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
+  address: https://hooks.slack.com/services/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
   channel: flux-cd-notifications
   secretRef:
     name: slack-secret
