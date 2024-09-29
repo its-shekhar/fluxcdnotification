@@ -1,0 +1,12 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: slack
+  namespace: flux-system
+spec:
+  address: https://hooks.slack.com/services/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
+  channel: flux-cd-notifications
+  secretRef:
+    name: slack-secret
+  type: slack
